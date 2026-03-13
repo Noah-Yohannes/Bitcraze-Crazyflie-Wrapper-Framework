@@ -20,8 +20,6 @@ Sample Crazyflie flight demonstrations:
 ![Sketch Flight Demo](media/wobble_gif.gif) -->
 
 
-GIFs provide quick visual demonstrations without requiring external video links.
-
 # Hardware Ecosystem
 
 This project relies on the following hardware:
