@@ -29,8 +29,7 @@ starting_position = (1.5,2.5,1.0)
 
 # Option 2: In this demo, we are sketching the pattern we want and let the wrapper fly the drone according to our pattern and selected flight axis
 
-
-pattern_saved_file_name, mission_coordinates  = launch_flightmaker()
+pattern_saved_file_name, mission_coordinates  = launch_flightmaker(motion_plane = "x_z")
 
 
 """ 

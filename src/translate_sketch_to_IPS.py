@@ -8,7 +8,7 @@
 """
 from src.linear_mapping_normalization import normalize_value
 
-def translate_sketch_to_ips(two_d_coordinates):
+def translate_sketch_to_ips(two_d_coordinates, motion_plane = "x_z"):
     """A function maps normalized sketch pixel values to the the IPS coordinate system using linear mapping to the IPS boundary values. 
 
     The input list of pixel value is 2D since it originals from a sketch in a 2D frame. Thus, the movement will be displayed either in the x-z plane or 

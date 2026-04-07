@@ -6,7 +6,7 @@ from src.read_save_sequences import read_tuple, save_sequences_to_file
 from src.save_plots import double_plot, single_plot, plot_coordinates
 
 
-def launch_flightmaker(mode_text=3, sketch_mode="sketch"):
+def launch_flightmaker(mode_text=3, sketch_mode="sketch", motion_plane = "x_z"):
     # import pygame
     # from translate_sketch_to_IPS import translate_sketch_to_ips
     # from Save_Read_Sequences import 
@@ -95,7 +95,7 @@ def launch_flightmaker(mode_text=3, sketch_mode="sketch"):
             sampled_pixel_points.append(value)  
     
     # -----------        IPS coordiantes         -------------------------------------
-    translated_coordinates, translated_sampled_coordinates = translate_sketch_to_ips(all_stroke_points)
+    translated_coordinates, translated_sampled_coordinates = translate_sketch_to_ips(all_stroke_points, motion_plane = "x_z")
     save_sequences_to_file(translated_coordinates, f"{sketch_mode}_all_IPS_coordinates.txt")
     save_sequences_to_file(translated_sampled_coordinates, f"sampled_IPS_{sketch_mode}.txt")
 
